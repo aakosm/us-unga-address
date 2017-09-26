@@ -12,6 +12,8 @@ library(Hmisc)
 
 rm(list=ls())
 
+set.seed(402)
+
 # loading the plaintext speeches and transforming it into a document-feature matrix
 unga <- readtext("*.txt")
 unga_dfm <- dfm(corpus(unga))
